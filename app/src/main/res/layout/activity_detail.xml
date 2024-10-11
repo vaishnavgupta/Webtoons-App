@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/toonImg"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+
+        android:background="#F6F6F6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pizza_sample" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/toonImg"
+        app:layout_constraintEnd_toEndOf="@+id/toonImg"
+        app:layout_constraintStart_toStartOf="@+id/toonImg"
+        app:srcCompat="@drawable/image_btm_overlay" />
+
+    <ImageView
+        android:id="@+id/backtohome"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:padding="4dp"
+        android:hapticFeedbackEnabled="true"
+        android:clickable="true"
+        android:foregroundGravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/card_back_btn"
+        app:srcCompat="@drawable/back_icon" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="414dp"
+        android:layout_height="498dp"
+        android:layout_marginTop="230dp"
+        android:background="@drawable/card_recipe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toonImg">
+
+        <TextView
+            android:id="@+id/toonHeading"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="22dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="45dp"
+            android:fontFamily="@font/afacadflux"
+            android:text="Sample Title for  Checking"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:padding="3dp"
+            android:id="@+id/imageView10"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/toonHeading"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="41dp"
+            android:layout_marginTop="4dp"
+            app:srcCompat="@drawable/editor"
+            app:tint="#019267" />
+
+        <TextView
+            android:id="@+id/toonCreator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toonHeading"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="50dp"
+            android:fontFamily="@font/shortstack"
+            android:text="25 mins" />
+
+        <ImageView
+            android:padding="3dp"
+            android:id="@+id/imageView11"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/toonCreator"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/chapter"
+            app:tint="#019267" />
+
+        <TextView
+            android:id="@+id/toonEpisode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_below="@+id/toonCreator"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/shortstack"
+            android:text="Alfred Dicosta" />
+
+        <ImageView
+
+            android:padding="3dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/toonEpisode"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/review"
+            app:tint="#019267" />
+
+        <TextView
+            android:id="@+id/toonRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toonEpisode"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="70dp"
+            android:textStyle="bold"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/shortstack"
+            android:text="Rate this Webtoon" />
+
+        <ImageView
+
+            android:padding="3dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/toonRate"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/stars"
+            app:tint="#019267" />
+
+        <TextView
+            android:id="@+id/toonAvgRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toonRate"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="14dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/shortstack"
+            android:text="Average Rating: 4.5/5" />
+
+
+
+
+        <ScrollView
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toonAvgRate"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true">
+
+
+            <TextView
+
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="30dp"
+                android:id="@+id/toonContent"
+                android:textSize="18dp"
+                android:fontFamily="@font/raleway"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="One of the best action fantasy manhwa and the most talked about adaptation in recent times is undoubtedly Solo Leveling. It is set in a world where humans have discovered supernatural skills, while our protagonist, Sung Jin-Woo, is a nobody with his E-Rank hunting skills. Things will take an interesting turn for him when he becomes the sole survivor of a dungeon raid. Awakened with strange new powers, Sung Jin-Woo will level up from being the weakest Hunter and eventually become the most powerful entity in the universe." />
+        </ScrollView>
+
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/toonfavourite"
+        android:layout_marginEnd="20dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/card_back_btn"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout"
+        app:srcCompat="@drawable/star" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
